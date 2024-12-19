@@ -1,0 +1,31 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "My ecommerce app using MERN",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksheoran098/ProShop.git"
+  },
+  "author": "Ankush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksheoran098/ProShop/issues"
+  },
+  "homepage": "https://github.com/aksheoran098/ProShop#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}
